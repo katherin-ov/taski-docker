@@ -68,8 +68,7 @@ jobs:
         # При помощи with передаём в action параметры username и password
         with:
           username: ${{ secrets.DOCKER_USERNAME }}
-          password: ${{ secrets.DOCKER_PASSWORD }}          # Хорошо ли держать логин и пароль прямо в 
-коде workflow?
+          password: ${{ secrets.DOCKER_PASSWORD }}
           # Нет, это нехорошо
       - name: Push to DockerHub
         # Одновременный билд и пуш образа в Docker Hub
